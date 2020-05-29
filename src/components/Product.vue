@@ -55,6 +55,12 @@ export default {
     .title {
         height: 80px;
         overflow: hidden;
+        font-size: 32px;
+
+        @media screen and (max-width: 375px) {
+          font-size: 16px;
+          height: 20px;
+        }
     }
     .label {
         height: 150px;
@@ -64,6 +70,11 @@ export default {
         overflow: hidden;
         height: 150px;
         white-space: normal;
+
+        @media screen and (max-width: 375px) {
+          font-size: 14px;
+          height: 100px;
+        }
     }
     .button-row {
         display: flex;

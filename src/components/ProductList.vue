@@ -27,15 +27,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-  ul {
-    list-style: none;
+  .product-list {
+    ul {
+      list-style: none;
 
-    display: flex;
-    overflow-x: auto;
-    padding-bottom: 20px;
+      display: flex;
+      overflow-x: auto;
+      padding-bottom: 20px;
 
-    li {
-      margin: 15px 12px;
+      li {
+        margin: 15px 12px;
+
+        @media screen and (max-width: 375px) {
+          font-size: 14px;
+        }
+      }
     }
   }
 </style>

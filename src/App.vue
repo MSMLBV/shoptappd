@@ -86,6 +86,14 @@ html, body {
 .header {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .welcome {
   color: #000;
